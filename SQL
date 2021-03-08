@@ -1,0 +1,27 @@
+CREATE TABLE clients(
+client_id INT NOT NULL AUTO_INCREMENT,
+fname VARCHAR (32) NOT NULL,
+lname VARCHAR (32) NOT NULL,
+address VARCHAR (32) NOT NULL,
+bank_id INT Not NULL,
+PRIMARY KEY (client_id)
+FOREIGN KEY (bank_id) REFERENCES bank(bank_id) 
+);
+
+CREATE TABLE bank (
+bank_id INT NOT NULL AUTO_INCREMENT,
+bank_name VARCHAR(32) NOT NULL,
+bank_address TEXT, 
+PRIMARY KEY (bank_id)
+);
+
+CREATE TABLE deposit(
+deposit_id INT NOT NULL AUTO_INCREMENT,
+client_id INT,
+deposit_percent DECIMAL(4,3),
+deposit_sum INT,
+term INT,
+PRIMARY KEY (deposit_id),
+FOREIGN KEY (client_id) REFERENCES clients (client_id)
+);
+
