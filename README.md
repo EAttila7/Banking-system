@@ -2,10 +2,10 @@
 
 This banking system made in Java
 
-#The project has
+The project has
 Registration and Login
 Validation
 And you can make a deposit
-#Сreator
+Сreator
 Sanatov Yedil SE-2011
 AITU
