@@ -10,6 +10,7 @@ Project has such classes
 4.Bank
 5.Deposit
 6.Validation
+7.Class for connect DB
 
 There is registration and login here.
 At the login item, we enter our name and password, and if such a name and password is available on the base on the screen, you are welcome.
